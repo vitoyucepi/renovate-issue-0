@@ -1,6 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":pinAllExceptPeerDependencies",
+    ":maintainLockFilesWeekly"
+  ],
+  "pinDigests": true,
+  "separateMinorPatch": true,
+  "platformAutomerge": true,
+  "minimumReleaseAge": "1 day",
+  "prCreation": "not-pending",
+  "internalChecksAsSuccess": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["pinDigest", "pin", "lockFileMaintenance"],
+      "minimumReleaseAgeBehaviour": "timestamp-optional",
+      "minimumReleaseAge": null,
+      "prCreation": "immediate"
+    },
+    {
+      "matchDatasources": ["repology"],
+      "minimumReleaseAgeBehaviour": "timestamp-optional",
+      "minimumReleaseAge": null,
+      "prCreation": "immediate"
+    }
   ]
 }
