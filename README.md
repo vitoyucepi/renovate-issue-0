@@ -1,4 +1,4 @@
-# Minimal reproduction for [renovate discussion 0](https://github.com/renovatebot/renovate/discussions/0)
+# Minimal reproduction for [renovate discussion 39900](https://github.com/renovatebot/renovate/discussions/39900)
 
 ## Current behavior
 
@@ -1706,4 +1706,4 @@ Renovate should create a PR after succefully passing the checks.
 
 ## Link to the Renovate issue or Discussion
 
-https://github.com/renovatebot/renovate/discussions/0
+https://github.com/renovatebot/renovate/discussions/39900
