@@ -3,9 +3,6 @@
   "extends": [
     "config:recommended"
   ],
-  "pinDigests": true,
-  "separateMinorPatch": true,
-  "platformAutomerge": true,
   "minimumReleaseAge": "1 day",
   "prCreation": "not-pending",
   "internalChecksAsSuccess": true
